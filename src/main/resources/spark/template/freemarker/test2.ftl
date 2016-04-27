@@ -20,47 +20,47 @@
 				  <tr>
 				    <td class="tg-chpy"> Rxy </td>
 				    <td class="tg-chpy"> 0.933306898 </td>
-				    <td class="tg-chpy"> ${A1} </td>
+				    <td class="tg-chpy"> ${B1} </td>
 				  </tr>
 				  <tr>
 				    <td class="tg-chpy"> R2 </td>
 				    <td class="tg-chpy"> 0.871061766 </td>
-				    <td class="tg-chpy"> ${A2} </td>
+				    <td class="tg-chpy"> ${B2} </td>
 				  </tr>
 				  <tr>
 				    <td class="tg-chpy"> significance </td>
 				    <td class="tg-chpy"> 7.98203E-05 </td>
-				    <td class="tg-chpy"> ${A3} </td>
+				    <td class="tg-chpy"> ${B3} </td>
 				  </tr>
 				   <tr>
 				    <td class="tg-chpy"> B0 </td>
 				    <td class="tg-chpy"> -4.038881575 </td>
-				    <td class="tg-chpy"> ${A1} </td>
+				    <td class="tg-chpy"> ${B1} </td>
 				  </tr>
 				  <tr>
 				    <td class="tg-chpy"> B1 </td>
 				    <td class="tg-chpy"> 0.16812665 </td>
-				    <td class="tg-chpy"> ${A2} </td>
+				    <td class="tg-chpy"> ${B2} </td>
 				  </tr>
 				  <tr>
 				    <td class="tg-chpy"> Yk </td>
 				    <td class="tg-chpy"> 60.85800528 </td>
-				    <td class="tg-chpy"> ${A3} </td>
+				    <td class="tg-chpy"> ${B3} </td>
 				  </tr>
 				  <tr>
 				    <td class="tg-chpy"> Range </td>
 				    <td class="tg-chpy"> 27.55764748 </td>
-				    <td class="tg-chpy"> ${A1} </td>
+				    <td class="tg-chpy"> ${B1} </td>
 				  </tr>
 				  <tr>
 				    <td class="tg-chpy"> UPI (70%) </td>
 				    <td class="tg-chpy"> 88.41565276 </td>
-				    <td class="tg-chpy"> ${A2} </td>
+				    <td class="tg-chpy"> ${B2} </td>
 				  </tr>
 				  <tr>
 				    <td class="tg-chpy"> LPI (70%) </td>
 				    <td class="tg-chpy"> 33.3003578 </td>
-				    <td class="tg-chpy"> ${A3} </td>
+				    <td class="tg-chpy"> ${B3} </td>
 				  </tr>
 				</table>
 			</div>

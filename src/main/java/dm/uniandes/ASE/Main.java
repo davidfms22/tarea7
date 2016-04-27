@@ -73,25 +73,43 @@ public class Main {
 		
 		post("/toTest2", (request, response) -> {
 			Map<String, Object> attributes = new HashMap<>();
-			attributes.put("A1", "");
-			attributes.put("A2", "");
-			attributes.put("A3", "");
+			attributes.put("B1", "");
+			attributes.put("B2", "");
+			attributes.put("B3", "");
+			attributes.put("B4", "");
+			attributes.put("B5", "");
+			attributes.put("B6", "");
+			attributes.put("B7", "");
+			attributes.put("B8", "");
+			attributes.put("B9", "");
 			return new ModelAndView(attributes, "test2.ftl");
 		}, new FreeMarkerEngine());
 		
 		post("/toTest3", (request, response) -> {
 			Map<String, Object> attributes = new HashMap<>();
-			attributes.put("A1", "");
-			attributes.put("A2", "");
-			attributes.put("A3", "");
+			attributes.put("C1", "");
+			attributes.put("C2", "");
+			attributes.put("C3", "");
+			attributes.put("C4", "");
+			attributes.put("C5", "");
+			attributes.put("C6", "");
+			attributes.put("C7", "");
+			attributes.put("C8", "");
+			attributes.put("C9", "");
 			return new ModelAndView(attributes, "test3.ftl");
 		}, new FreeMarkerEngine());
 		
 		post("/toTest4", (request, response) -> {
 			Map<String, Object> attributes = new HashMap<>();
-			attributes.put("A1", "");
-			attributes.put("A2", "");
-			attributes.put("A3", "");
+			attributes.put("D1", "");
+			attributes.put("D2", "");
+			attributes.put("D3", "");
+			attributes.put("D4", "");
+			attributes.put("D5", "");
+			attributes.put("D6", "");
+			attributes.put("D7", "");
+			attributes.put("D8", "");
+			attributes.put("D9", "");
 			return new ModelAndView(attributes, "test4.ftl");
 		}, new FreeMarkerEngine());
 		
@@ -113,7 +131,7 @@ public class Main {
 		
 		String a1 = result1.get("rXY").toString();
 		String a2 = result1.get("r2").toString();
-		String a3 = result1.get("rXY").toString();
+		String a3 = "";
 		String a4 = result1.get("beta0").toString();
 		String a5 = result1.get("beta1").toString();
 		String a6 = result1.get("yK").toString();
@@ -135,27 +153,69 @@ public class Main {
 			return new ModelAndView(attributes, "result1.ftl");
 		}, new FreeMarkerEngine());
 		
+		HashMap<String, List<Double>> data2 = new HashMap<String, List<Double>>();
+		try {
+			data2 = FileFinder.getPairData(mainPath.replace(".", filePath1));
+		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		HashMap<String, Double> result2 = new HashMap<String, Double>();
+		result1=Statistics.linearRegression(data2.get("x"), data2.get("y"));
+		
+		String b1 = result2.get("rXY").toString();
+		String b2 = result2.get("r2").toString();
+		String b3 = "";
+		String b4 = result2.get("beta0").toString();
+		String b5 = result2.get("beta1").toString();
+		String b6 = result2.get("yK").toString();
+		String b7 = "";
+		String b8 = "";
+		String b9 = "";
+		
+		
 		get("/result2", (request, response) -> {
 			Map<String, Object> attributes = new HashMap<>();
-			attributes.put("A1", a1);
-			attributes.put("A2", a2);
-			attributes.put("A3", a3);
+			attributes.put("B1", b1);
+			attributes.put("B2", b2);
+			attributes.put("B3", b3);
+			attributes.put("B4", b4);
+			attributes.put("B5", b5);
+			attributes.put("B6", b6);
+			attributes.put("B7", b7);
+			attributes.put("B8", b8);
+			attributes.put("B9", b9);
 			return new ModelAndView(attributes, "result2.ftl");
 		}, new FreeMarkerEngine());
 		
 		get("/result3", (request, response) -> {
 			Map<String, Object> attributes = new HashMap<>();
-			attributes.put("A1", "");
-			attributes.put("A2", "");
-			attributes.put("A3", "");
+			attributes.put("C1", "");
+			attributes.put("C2", "");
+			attributes.put("C3", "");
+			attributes.put("C4", "");
+			attributes.put("C5", "");
+			attributes.put("C6", "");
+			attributes.put("C7", "");
+			attributes.put("C8", "");
+			attributes.put("C9", "");
 			return new ModelAndView(attributes, "result3.ftl");
 		}, new FreeMarkerEngine());
 		
 		get("/result4", (request, response) -> {
 			Map<String, Object> attributes = new HashMap<>();
-			attributes.put("A1", "");
-			attributes.put("A2", "");
-			attributes.put("A3", "");
+			attributes.put("D1", "");
+			attributes.put("D2", "");
+			attributes.put("D3", "");
+			attributes.put("D4", "");
+			attributes.put("D5", "");
+			attributes.put("D6", "");
+			attributes.put("D7", "");
+			attributes.put("D8", "");
+			attributes.put("D9", "");
 			return new ModelAndView(attributes, "result4.ftl");
 		}, new FreeMarkerEngine());
 
