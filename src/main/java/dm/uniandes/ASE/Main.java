@@ -86,7 +86,7 @@ public class Main {
 		String a2 = getUpperLimit(0.45, 15).toString();
 		String a3 = getUpperLimit(0.495, 4).toString();
 		
-		post("/result1", (request, response) -> {
+		get("/result1", (request, response) -> {
 			Map<String, Object> attributes = new HashMap<>();
 			attributes.put("A1", a1);
 			attributes.put("A2", a2);
