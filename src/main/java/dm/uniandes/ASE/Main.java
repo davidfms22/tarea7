@@ -114,7 +114,6 @@ public class Main {
 		}, new FreeMarkerEngine());
 		
 		
-		
 		HashMap<String, Double> result1 = new HashMap<String, Double>();
 		result1 = algo(filePath1);
 		String a1 = result1.get("rXY").toString();

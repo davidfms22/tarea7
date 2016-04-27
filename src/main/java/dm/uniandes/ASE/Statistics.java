@@ -84,6 +84,11 @@ public final class Statistics {
 		Double rXY = up / down;
 		Double r2 = rXY * rXY;
 		Double yK = beta0 + (beta1 * 386);
+		beta1 = roundDown(beta1,8);
+		beta0 = roundDown(beta0,8);
+		rXY = roundDown(rXY,8);
+		r2 = roundDown(r2,8);
+		yK = roundDown(yK,8);
 
 		HashMap<String, Double> result = new HashMap<String, Double>();
 		result.put("beta1", beta1);
