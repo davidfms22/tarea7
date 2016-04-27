@@ -5,7 +5,11 @@ import static spark.Spark.post;
 import static spark.SparkBase.port;
 import static spark.SparkBase.staticFileLocation;
 
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 import spark.ModelAndView;
@@ -15,9 +19,7 @@ import spark.template.freemarker.FreeMarkerEngine;
 /*                                                                                 */
 /* Nombre:         David Francisco Martinez Salcedo                                */
 /* Fecha:          13/04/2016                                                      */
-/* Descripción:    Programa para encontrar el limete superior                      */
-/*                 de una inetgral hallada bajo el metodo numerico de la           */
-/*                 regla de Simpson                                                */
+/* Descripción:    Programa final de conceptos avanzados de ingenieria             */
 /*                                                                                 */
 /***********************************************************************************/
 
@@ -30,6 +32,11 @@ import spark.template.freemarker.FreeMarkerEngine;
  */
 
 public class Main {
+	
+	private static String filePath1 = "test1.txt";
+	private static String filePath2 = "test2.txt";
+	private static String filePath3 = "test3.txt";
+	private static String filePath4 = "test4.txt";
 
 	// Metodos
 
@@ -55,6 +62,12 @@ public class Main {
 			attributes.put("A1", "");
 			attributes.put("A2", "");
 			attributes.put("A3", "");
+			attributes.put("A4", "");
+			attributes.put("A5", "");
+			attributes.put("A6", "");
+			attributes.put("A7", "");
+			attributes.put("A8", "");
+			attributes.put("A9", "");
 			return new ModelAndView(attributes, "test1.ftl");
 		}, new FreeMarkerEngine());
 		
@@ -82,15 +95,43 @@ public class Main {
 			return new ModelAndView(attributes, "test4.ftl");
 		}, new FreeMarkerEngine());
 		
-		String a1 = getUpperLimit(0.20, 6).toString();
-		String a2 = getUpperLimit(0.45, 15).toString();
-		String a3 = getUpperLimit(0.495, 4).toString();
+		String mainPath = new File(".").getAbsolutePath().toString();
+		
+		HashMap<String, List<Double>> data1 = new HashMap<String, List<Double>>();
+		try {
+			data1 = FileFinder.getPairData(mainPath.replace(".", filePath1));
+		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		HashMap<String, Double> result1 = new HashMap<String, Double>();
+		result1=Statistics.linearRegression(data1.get("x"), data1.get("y"));
+		
+		
+		String a1 = result1.get("rXY").toString();
+		String a2 = result1.get("r2").toString();
+		String a3 = result1.get("rXY").toString();
+		String a4 = result1.get("beta0").toString();
+		String a5 = result1.get("beta1").toString();
+		String a6 = result1.get("yK").toString();
+		String a7 = "";
+		String a8 = "";
+		String a9 = "";
 		
 		get("/result1", (request, response) -> {
 			Map<String, Object> attributes = new HashMap<>();
 			attributes.put("A1", a1);
 			attributes.put("A2", a2);
 			attributes.put("A3", a3);
+			attributes.put("A4", a4);
+			attributes.put("A5", a5);
+			attributes.put("A6", a6);
+			attributes.put("A7", a7);
+			attributes.put("A8", a8);
+			attributes.put("A9", a9);
 			return new ModelAndView(attributes, "result1.ftl");
 		}, new FreeMarkerEngine());
 		

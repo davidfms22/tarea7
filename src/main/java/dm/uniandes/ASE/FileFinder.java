@@ -13,6 +13,12 @@ public final class FileFinder {
 	
 	private static String mainPath = new File(".").getAbsolutePath().toString();
 
+	/**
+	 * Metodo para obtener lista de datos de un archivo.
+	 * 
+	 * @param filePath:
+	 *            ruta del archivo.
+	 */
 	public static List<Double> getData(String filePath) throws FileNotFoundException, IOException {
 		String num;
 		FileReader file = new FileReader(mainPath.replace(".", filePath));
@@ -29,6 +35,12 @@ public final class FileFinder {
 		return data;
 	}
 	
+	/**
+	 * Metodo para obtener lista de pares de datos de un arreglo.
+	 * 
+	 * @param filePath:
+	 *            ruta del archivo.
+	 */
 	public static HashMap<String, List<Double>> getPairData(String filePath) throws FileNotFoundException, IOException {
 		
 		FileReader file = new FileReader(mainPath.replace(".", filePath));
