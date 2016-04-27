@@ -35,32 +35,32 @@
 				   <tr>
 				    <td class="tg-chpy"> B0 </td>
 				    <td class="tg-chpy"> n/a </td>
-				    <td class="tg-chpy"> ${D1} </td>
+				    <td class="tg-chpy"> ${D4} </td>
 				  </tr>
 				  <tr>
 				    <td class="tg-chpy"> B1 </td>
 				    <td class="tg-chpy"> n/a </td>
-				    <td class="tg-chpy"> ${D2} </td>
+				    <td class="tg-chpy"> ${D5} </td>
 				  </tr>
 				  <tr>
 				    <td class="tg-chpy"> Yk </td>
 				    <td class="tg-chpy"> n/a </td>
-				    <td class="tg-chpy"> ${D3} </td>
+				    <td class="tg-chpy"> ${D6} </td>
 				  </tr>
 				  <tr>
 				    <td class="tg-chpy"> Range </td>
 				    <td class="tg-chpy"> n/a </td>
-				    <td class="tg-chpy"> ${D1} </td>
+				    <td class="tg-chpy"> ${D7} </td>
 				  </tr>
 				  <tr>
 				    <td class="tg-chpy"> UPI (70%) </td>
 				    <td class="tg-chpy"> n/a </td>
-				    <td class="tg-chpy"> ${D2} </td>
+				    <td class="tg-chpy"> ${D8} </td>
 				  </tr>
 				  <tr>
 				    <td class="tg-chpy"> LPI (70%) </td>
 				    <td class="tg-chpy"> n/a </td>
-				    <td class="tg-chpy"> ${D3} </td>
+				    <td class="tg-chpy"> ${D9} </td>
 				  </tr>
 				</table>
 			</div>

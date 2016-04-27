@@ -35,32 +35,32 @@
 				   <tr>
 				    <td class="tg-chpy"> B0 </td>
 				    <td class="tg-chpy"> -4.038881575 </td>
-				    <td class="tg-chpy"> ${B1} </td>
+				    <td class="tg-chpy"> ${B4} </td>
 				  </tr>
 				  <tr>
 				    <td class="tg-chpy"> B1 </td>
 				    <td class="tg-chpy"> 0.16812665 </td>
-				    <td class="tg-chpy"> ${B2} </td>
+				    <td class="tg-chpy"> ${B5} </td>
 				  </tr>
 				  <tr>
 				    <td class="tg-chpy"> Yk </td>
 				    <td class="tg-chpy"> 60.85800528 </td>
-				    <td class="tg-chpy"> ${B3} </td>
+				    <td class="tg-chpy"> ${B6} </td>
 				  </tr>
 				  <tr>
 				    <td class="tg-chpy"> Range </td>
 				    <td class="tg-chpy"> 27.55764748 </td>
-				    <td class="tg-chpy"> ${B1} </td>
+				    <td class="tg-chpy"> ${B7} </td>
 				  </tr>
 				  <tr>
 				    <td class="tg-chpy"> UPI (70%) </td>
 				    <td class="tg-chpy"> 88.41565276 </td>
-				    <td class="tg-chpy"> ${B2} </td>
+				    <td class="tg-chpy"> ${B8} </td>
 				  </tr>
 				  <tr>
 				    <td class="tg-chpy"> LPI (70%) </td>
 				    <td class="tg-chpy"> 33.3003578 </td>
-				    <td class="tg-chpy"> ${B3} </td>
+				    <td class="tg-chpy"> ${B9} </td>
 				  </tr>
 				</table>
 			</div>
