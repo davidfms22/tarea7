@@ -16,7 +16,7 @@
 				    <th class="tg-30hw"> Actual<br>Value </th>
 				  </tr>
 				  <tr>
-				    <td class="tg-bgso" rowspan="9"> test1 </td>
+				    <td class="tg-bgso" rowspan="3"> test1 </td>
 				    <td class="tg-chpy"> Rxy </td>
 				    <td class="tg-chpy"> 0.954496574 </td>
 				    <td class="tg-chpy"> ${A1} </td>
@@ -30,36 +30,6 @@
 				    <td class="tg-chpy"> significance </td>
 				    <td class="tg-chpy"> 1.77517E-05 </td>
 				    <td class="tg-chpy"> ${A3} </td>
-				  </tr>
-				  <tr>
-				    <td class="tg-chpy"> B0 </td>
-				    <td class="tg-chpy"> -22.55253275 </td>
-				    <td class="tg-chpy"> ${A4} </td>
-				  </tr>
-				  <tr>
-				    <td class="tg-chpy"> B1 </td>
-				    <td class="tg-chpy"> 1.727932426 </td>
-				    <td class="tg-chpy"> ${A5} </td>
-				  </tr>
-				  <tr>
-				    <td class="tg-chpy"> Yk </td>
-				    <td class="tg-chpy"> 644.4293838 </td>
-				    <td class="tg-chpy"> ${A6} </td>
-				  </tr>
-				  <tr>
-				    <td class="tg-chpy"> Range </td>
-				    <td class="tg-chpy"> 230.0017197 </td>
-				    <td class="tg-chpy"> ${A7} </td>
-				  </tr>
-				  <tr>
-				    <td class="tg-chpy"> UPI (70%) </td>
-				    <td class="tg-chpy"> 874.4311035 </td>
-				    <td class="tg-chpy"> ${A8} </td>
-				  </tr>
-				  <tr>
-				    <td class="tg-chpy"> LPI (70%) </td>
-				    <td class="tg-chpy"> 414.427664 </td>
-				    <td class="tg-chpy"> ${A9} </td>
 				  </tr>
 				</table>
 			</div>
