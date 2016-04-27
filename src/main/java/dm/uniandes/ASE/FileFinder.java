@@ -9,6 +9,13 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
+/**
+ * Esta clase es la encargada de leer los datos desde un archivos y 
+ * incluirlos en una lista para que se les pueda dar tratamiento
+ * 
+ * @author David Martinez
+ *
+ */
 public final class FileFinder {
 	
 	private static String mainPath = new File(".").getAbsolutePath().toString();
