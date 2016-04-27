@@ -10,7 +10,7 @@
 			<div> 
 				<table class="tg">
 				  <tr>
-				    <th class="tg-30hw" colspan="3"> Test 1</th>
+				    <th class="tg-30hw" colspan="3"> Test 3</th>
 				  </tr>
 				  <tr>
 				    <th class="tg-30hw"> Parameter </th>

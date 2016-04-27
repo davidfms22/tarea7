@@ -50,12 +50,7 @@ public class Main {
 			return new ModelAndView(attributes, "index.ftl");
 		}, new FreeMarkerEngine());
 		
-		
-		String a1 = getUpperLimit(0.20, 6).toString();
-		String a2 = getUpperLimit(0.45, 15).toString();
-		String a3 = getUpperLimit(0.495, 4).toString();
-		
-		post("/test1", (request, response) -> {
+		post("/toTest1", (request, response) -> {
 			Map<String, Object> attributes = new HashMap<>();
 			attributes.put("A1", "");
 			attributes.put("A2", "");
@@ -63,7 +58,35 @@ public class Main {
 			return new ModelAndView(attributes, "test1.ftl");
 		}, new FreeMarkerEngine());
 		
-		post("/calcular", (request, response) -> {
+		post("/toTest2", (request, response) -> {
+			Map<String, Object> attributes = new HashMap<>();
+			attributes.put("A1", "");
+			attributes.put("A2", "");
+			attributes.put("A3", "");
+			return new ModelAndView(attributes, "test2.ftl");
+		}, new FreeMarkerEngine());
+		
+		post("/toTest3", (request, response) -> {
+			Map<String, Object> attributes = new HashMap<>();
+			attributes.put("A1", "");
+			attributes.put("A2", "");
+			attributes.put("A3", "");
+			return new ModelAndView(attributes, "test3.ftl");
+		}, new FreeMarkerEngine());
+		
+		post("/toTest4", (request, response) -> {
+			Map<String, Object> attributes = new HashMap<>();
+			attributes.put("A1", "");
+			attributes.put("A2", "");
+			attributes.put("A3", "");
+			return new ModelAndView(attributes, "test4.ftl");
+		}, new FreeMarkerEngine());
+		
+		String a1 = getUpperLimit(0.20, 6).toString();
+		String a2 = getUpperLimit(0.45, 15).toString();
+		String a3 = getUpperLimit(0.495, 4).toString();
+		
+		post("/result1", (request, response) -> {
 			Map<String, Object> attributes = new HashMap<>();
 			attributes.put("A1", a1);
 			attributes.put("A2", a2);
