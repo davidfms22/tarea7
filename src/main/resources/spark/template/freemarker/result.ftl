@@ -31,6 +31,36 @@
 				    <td class="tg-chpy"> 1.77517E-05 </td>
 				    <td class="tg-chpy"> ${A3} </td>
 				  </tr>
+				   <tr>
+				    <td class="tg-chpy"> Rxy </td>
+				    <td class="tg-chpy"> 0.954496574 </td>
+				    <td class="tg-chpy"> ${A1} </td>
+				  </tr>
+				  <tr>
+				    <td class="tg-chpy"> R2 </td>
+				    <td class="tg-chpy"> 0.91106371 </td>
+				    <td class="tg-chpy"> ${A2} </td>
+				  </tr>
+				  <tr>
+				    <td class="tg-chpy"> significance </td>
+				    <td class="tg-chpy"> 1.77517E-05 </td>
+				    <td class="tg-chpy"> ${A3} </td>
+				  </tr>
+				  <tr>
+				    <td class="tg-chpy"> Rxy </td>
+				    <td class="tg-chpy"> 0.954496574 </td>
+				    <td class="tg-chpy"> ${A1} </td>
+				  </tr>
+				  <tr>
+				    <td class="tg-chpy"> R2 </td>
+				    <td class="tg-chpy"> 0.91106371 </td>
+				    <td class="tg-chpy"> ${A2} </td>
+				  </tr>
+				  <tr>
+				    <td class="tg-chpy"> significance </td>
+				    <td class="tg-chpy"> 1.77517E-05 </td>
+				    <td class="tg-chpy"> ${A3} </td>
+				  </tr>
 				</table>
 			</div>
 			<div><input type='submit' value='Back'></div>
