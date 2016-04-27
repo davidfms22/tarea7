@@ -16,7 +16,7 @@
 				    <th class="tg-30hw"> Actual<br>Value </th>
 				  </tr>
 				  <tr>
-				    <td class="tg-bgso" rowspan="3"> test1 </td>
+				    <td class="tg-bgso" rowspan="9"> test1 </td>
 				    <td class="tg-chpy"> Rxy </td>
 				    <td class="tg-chpy"> 0.954496574 </td>
 				    <td class="tg-chpy"> ${A1} </td>
