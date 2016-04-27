@@ -46,9 +46,6 @@ public class Main {
 
 		get("/", (request, response) -> {
 			Map<String, Object> attributes = new HashMap<>();
-			attributes.put("A1", "");
-			attributes.put("A2", "");
-			attributes.put("A3", "");
 
 			return new ModelAndView(attributes, "index.ftl");
 		}, new FreeMarkerEngine());
