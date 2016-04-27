@@ -6,7 +6,7 @@
 
 	<body>
 		
-		<form class="contacto" action="/calcular" method="post" name="contact_form">
+		<form class="contacto" action="/test1" method="post" name="contact_form">
 			<div> 
 				<table class="tg">
 				  <tr>
