@@ -6,17 +6,18 @@
 
 	<body>
 		
-		<form class="contacto" action="/" method="get" name="contact_form">
+		<form class="contacto" action="/calcular" method="post" name="contact_form">
 			<div> 
 				<table class="tg">
 				  <tr>
-				    <th class="tg-30hw"> Test </th>
+				    <th class="tg-30hw" colspan="3"> Test 1</th>
+				  </tr>
+				  <tr>
 				    <th class="tg-30hw"> Parameter </th>
 				    <th class="tg-30hw"> Expect<br>Value </th>
 				    <th class="tg-30hw"> Actual<br>Value </th>
 				  </tr>
 				  <tr>
-				    <td class="tg-bgso" rowspan="9"> test1 </td>
 				    <td class="tg-chpy"> Rxy </td>
 				    <td class="tg-chpy"> 0.954496574 </td>
 				    <td class="tg-chpy"> ${A1} </td>
@@ -63,7 +64,7 @@
 				  </tr>
 				</table>
 			</div>
-			<div><input type='submit' value='Back'></div>
+			<div><input type='submit' value='Calculate'></div>
 		</form>
 	</body>
 </html>

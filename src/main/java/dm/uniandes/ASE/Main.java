@@ -58,6 +58,14 @@ public class Main {
 		String a2 = getUpperLimit(0.45, 15).toString();
 		String a3 = getUpperLimit(0.495, 4).toString();
 		
+		post("/test1", (request, response) -> {
+			Map<String, Object> attributes = new HashMap<>();
+			attributes.put("A1", "");
+			attributes.put("A2", "");
+			attributes.put("A3", "");
+			return new ModelAndView(attributes, "test1.ftl");
+		}, new FreeMarkerEngine());
+		
 		post("/calcular", (request, response) -> {
 			Map<String, Object> attributes = new HashMap<>();
 			attributes.put("A1", a1);
