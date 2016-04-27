@@ -140,18 +140,29 @@ public class Main {
 			return new ModelAndView(attributes, "result1.ftl");
 		}, new FreeMarkerEngine());
 		
+		HashMap<String, Double> result2 = new HashMap<String, Double>();
+		result2 = algo(filePath2);
+		String b1 = result2.get("rXY").toString();
+		String b2 = result2.get("r2").toString();
+		String b3 = "";
+		String b4 = result2.get("beta0").toString();
+		String b5 = result2.get("beta1").toString();
+		String b6 = result2.get("yK").toString();
+		String b7 = "";
+		String b8 = "";
+		String b9 = "";
 		
 		get("/result2", (request, response) -> {
 			Map<String, Object> attributes = new HashMap<>();
-			attributes.put("B1", "");
-			attributes.put("B2", "");
-			attributes.put("B3", "");
-			attributes.put("B4", "");
-			attributes.put("B5", "");
-			attributes.put("B6", "");
-			attributes.put("B7", "");
-			attributes.put("B8", "");
-			attributes.put("B9", "");
+			attributes.put("B1", b1);
+			attributes.put("B2", b2);
+			attributes.put("B3", b3);
+			attributes.put("B4", b4);
+			attributes.put("B5", b5);
+			attributes.put("B6", b6);
+			attributes.put("B7", b7);
+			attributes.put("B8", b8);
+			attributes.put("B9", b9);
 			return new ModelAndView(attributes, "result2.ftl");
 		}, new FreeMarkerEngine());
 		
