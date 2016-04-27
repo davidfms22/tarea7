@@ -144,18 +144,18 @@ public class Main {
 			attributes.put("A1", a1);
 			attributes.put("A2", a2);
 			attributes.put("A3", a3);
-			attributes.put("A4", a4);
-			attributes.put("A5", a5);
-			attributes.put("A6", a6);
-			attributes.put("A7", a7);
-			attributes.put("A8", a8);
-			attributes.put("A9", a9);
+//			attributes.put("A4", a4);
+//			attributes.put("A5", a5);
+//			attributes.put("A6", a6);
+//			attributes.put("A7", a7);
+//			attributes.put("A8", a8);
+//			attributes.put("A9", a9);
 			return new ModelAndView(attributes, "result1.ftl");
 		}, new FreeMarkerEngine());
 		
 		HashMap<String, List<Double>> data2 = new HashMap<String, List<Double>>();
 		try {
-			data2 = FileFinder.getPairData(mainPath.replace(".", filePath1));
+			data2 = FileFinder.getPairData(mainPath.replace(".", filePath2));
 		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
