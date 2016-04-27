@@ -7,7 +7,7 @@
 	<body>
 		<form class="contacto" method="post" name="contact_form">
 			<div>
-				<th class="tg-30hw"> Test 1</th>
+				<th class="tg-30hw"> Please select one of the tests </th>
 			</div>
 			<div>
 				<input type='submit' value='Test1' onclick='this.form.action="/toTest1";'>

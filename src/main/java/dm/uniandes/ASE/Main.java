@@ -93,6 +93,30 @@ public class Main {
 			attributes.put("A3", a3);
 			return new ModelAndView(attributes, "result1.ftl");
 		}, new FreeMarkerEngine());
+		
+		get("/result2", (request, response) -> {
+			Map<String, Object> attributes = new HashMap<>();
+			attributes.put("A1", a1);
+			attributes.put("A2", a2);
+			attributes.put("A3", a3);
+			return new ModelAndView(attributes, "result2.ftl");
+		}, new FreeMarkerEngine());
+		
+		get("/result3", (request, response) -> {
+			Map<String, Object> attributes = new HashMap<>();
+			attributes.put("A1", a1);
+			attributes.put("A2", a2);
+			attributes.put("A3", a3);
+			return new ModelAndView(attributes, "result3.ftl");
+		}, new FreeMarkerEngine());
+		
+		get("/result4", (request, response) -> {
+			Map<String, Object> attributes = new HashMap<>();
+			attributes.put("A1", a1);
+			attributes.put("A2", a2);
+			attributes.put("A3", a3);
+			return new ModelAndView(attributes, "result4.ftl");
+		}, new FreeMarkerEngine());
 
 	}
 	

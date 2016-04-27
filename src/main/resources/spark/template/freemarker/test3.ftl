@@ -6,7 +6,7 @@
 
 	<body>
 		
-		<form class="contacto" action="/result1" method="get" name="contact_form">
+		<form class="contacto" action="/result3" method="get" name="contact_form">
 			<div> 
 				<table class="tg">
 				  <tr>
