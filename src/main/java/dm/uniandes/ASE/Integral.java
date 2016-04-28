@@ -20,7 +20,7 @@ public class Integral {
 
 	private Integer dof;
 
-	private Integer num_seg = 30;
+	private Integer num_seg = 135000;
 
 	private Double param = 0.5;
 
