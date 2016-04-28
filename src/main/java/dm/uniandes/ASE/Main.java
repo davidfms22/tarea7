@@ -268,8 +268,8 @@ public class Main {
 		HashMap<String, Double> result = new HashMap<String, Double>();
 		result = Statistics.linearRegression(data.get("x"), data.get("y"));
 		Double Rxy = result.get("rXY");
-		Double x = ( Math.abs(Rxy)*Math.sqrt(data.size()-2) )/( Math.sqrt(1-Math.pow(Rxy, 2)) );
-		Double p = doIntegral(x, data.size()-2);
+		Double x = ( Math.abs(Rxy)*Math.sqrt(data.get("x").size()-2) )/( Math.sqrt(1-Math.pow(Rxy, 2)) );
+		Double p = doIntegral(x, data.get("x").size()-2);
 		Double sig = 1 - (2*p);
 		sig = Statistics.roundDown(sig, 8);
 		result.put("sig", sig);
