@@ -116,7 +116,7 @@ public class Main {
 		result1 = myProbe(filePath1);
 		String a1 = result1.get("rXY").toString();
 		String a2 = result1.get("r2").toString();
-		String a3 = "";
+		String a3 = result1.get("sig").toString();
 		String a4 = result1.get("beta0").toString();
 		String a5 = result1.get("beta1").toString();
 		String a6 = result1.get("yK").toString();
@@ -142,7 +142,7 @@ public class Main {
 		result2 = myProbe(filePath2);
 		String b1 = result2.get("rXY").toString();
 		String b2 = result2.get("r2").toString();
-		String b3 = "";
+		String b3 = result2.get("sig").toString();
 		String b4 = result2.get("beta0").toString();
 		String b5 = result2.get("beta1").toString();
 		String b6 = result2.get("yK").toString();
@@ -168,7 +168,7 @@ public class Main {
 		result3 = myProbe(filePath3);
 		String c1 = result3.get("rXY").toString();
 		String c2 = result3.get("r2").toString();
-		String c3 = "";
+		String c3 = result3.get("sig").toString();
 		String c4 = result3.get("beta0").toString();
 		String c5 = result3.get("beta1").toString();
 		String c6 = result3.get("yK").toString();
@@ -194,7 +194,7 @@ public class Main {
 		result4 = myProbe(filePath4);
 		String d1 = result4.get("rXY").toString();
 		String d2 = result4.get("r2").toString();
-		String d3 = "";
+		String d3 = result4.get("sig").toString();
 		String d4 = result4.get("beta0").toString();
 		String d5 = result4.get("beta1").toString();
 		String d6 = result4.get("yK").toString();
@@ -267,6 +267,12 @@ public class Main {
 		}
 		HashMap<String, Double> result = new HashMap<String, Double>();
 		result = Statistics.linearRegression(data.get("x"), data.get("y"));
+		Double Rxy = result.get("rXY");
+		Double x = ( Math.abs(Rxy)*Math.sqrt(data.size()-2) )/( Math.sqrt(1-Math.pow(Rxy, 2)) );
+		Double p = doIntegral(x, data.size()-2);
+		Double sig = 1 - (2*p);
+		sig = Statistics.roundDown(sig, 8);
+		result.put("sig", sig);
 
 		return result;
 	}
