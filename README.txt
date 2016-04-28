@@ -10,3 +10,7 @@ Local
 Heroku
 
 Simplemente entrando a la url https://dm-tarea7.herokuapp.com/
+
+Javadoc 
+
+Se encuentra en la carpeta doc
